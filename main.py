@@ -30,7 +30,7 @@ class Joker:
                 httpPostString = httpPostString[:httpPostString.find('?')]
             try :
                 with open('httpRequest.txt', 'a') as f:
-                    if request.method == "POST" :  # get_project_list 時的參數是空的還沒解決，解決完可以去看 GET。 # mitmdump -s addons.py
+                    if request.method == "POST" :
                         content = request.content.decode('utf-8')
                         postARG = request.get_text().split('&')
                         if len(postARG) and (httpPostString not in self.httpRequestlist) :
