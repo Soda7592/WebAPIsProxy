@@ -1,0 +1,4 @@
+/get_exception_status(POST)
+p_id:890
+/get_model_info(POST)
+model_info:%7B%22model_name%22%3A%22000999888%22%2C%22p_id%22%3A%22890%22%7D
